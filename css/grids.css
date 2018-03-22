@@ -1,0 +1,235 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.box{
+
+	width: 50%;
+	padding: 0.25rem;
+	float: left;
+	background-clip:content-box;
+	height: 49vw;
+
+
+}
+
+.box-row{
+	margin: auto;
+	width: 100%;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+}
+.button-row{
+	margin: auto;
+	margin-top: -1.5rem;
+	width: 100%;
+
+}
+.button-row::after {
+	content: "";
+	display: block;
+	clear:left;
+}
+
+.box-row::after {
+	content: "";
+	display: block;
+	clear:left;
+}
+
+.boxes{
+	margin-top: 5rem;
+
+}
+
+.project-boxes{
+	margin-bottom: 5rem;
+}
+
+.heading {
+	padding-left: 1em;
+}
+
+.page-content{
+	padding-left: 1em;
+}
+
+
+.grid-col-45{
+width: 100%;
+padding-right: 1em;
+}
+.grid-col-55{
+	width: 100%;
+	height: 56.5%;
+
+}
+.griod-col-50{
+	width: 100%;
+}
+
+.video{
+	width: 100%;
+
+}
+.project{
+	padding-right: 1em;
+
+}
+
+.contact-img{
+	opacity: 0;
+}
+@media(max-width: 51em){
+[class^='project-header']{
+	display:inline-block;
+	width: 100%;
+	height: auto;
+}
+
+}
+.work-copy{
+	padding: 0;
+}
+
+
+@media (min-width: 30em){
+.box{
+	background-clip:content-box;
+	width: 12rem;
+	height: 12rem;
+	padding: 0.75em;
+
+}
+.boxes{
+	margin: auto;
+	width: 27rem;
+	margin-top: 5rem;
+}
+
+.project-boxes{
+	margin: auto;
+	width: 27rem;
+	margin-bottom: 5rem;
+}
+
+.heading{
+	padding-left: 3em;
+}
+.page-content{
+	padding-left: 3em;
+}
+
+
+
+
+
+
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0;
+	}
+
+.grid-row::after{
+	content: "";
+	display: block;
+	clear:left;
+}
+.grid-col-45{
+width: 45%;
+}
+.grid-col-55{
+	width: 55%;
+	padding-right: 1em;
+	padding-left: 3em;
+	padding-top: 2.9em;
+}
+
+.contact-img{
+	width: 95%;
+	height: auto;
+	opacity: 0.99;
+	max-width: 15rem;
+}
+
+
+
+}
+
+@media (min-width: 50em){
+
+.work-copy{
+	padding: 2em;
+}
+
+.grid-col-50{
+	width: 50%;
+
+}
+.video{
+	width: 80%
+
+
+}
+
+.project-header-top{
+display: inline-block;
+width: 100%;
+height: auto;
+
+
+}
+
+.project-header-bottom{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+/* .pic-box{
+	padding-top: 4.55%;
+	padding-bottom: 4.55%;
+} */
+/* .aw-yvr{
+	padding-top: 11.6%;
+	padding-bottom: 11.6% ;
+} */
+
+
+}
+
+@media (min-width:40em) {
+	.flex-box{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.flex-text{
+		flex: 1 1 20em;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+.flex-content{
+	flex: 1 1 20em;
+
+}
+.project-header{
+	max-width: 50rem;
+}
+
+.video{
+	/* margin-top:3rem; */
+}
+
+.flex-item:nth-of-type(1){order: 1}
+.flex-item:nth-of-type(2){order: 2}
+.flex-item:nth-of-type(3){order: 3}
+
+
+
+
+
+}
