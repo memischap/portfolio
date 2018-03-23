@@ -1,0 +1,40 @@
+#streetcar{
+  position: relative;
+  animation-name: streetcar-an;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+    animation-direction: alternate;
+  width: 80%
+}
+
+
+@keyframes streetcar-an {
+
+  from{
+    right:-400px;
+  }
+  to{
+    right:1200px;
+  }
+}
+@media(max-width:30rem){
+  #streetcar{
+    position: relative;
+    animation-name: streetcar-an;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+      animation-direction: alternate;
+    width: 80%
+  }
+@keyframes streetcar-an {
+
+  from{
+    right:0%;
+  }
+  to{
+    right:100%;
+  }
+}
+}
