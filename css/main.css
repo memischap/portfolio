@@ -199,3 +199,10 @@ opacity: 0.6;
 	max-width: 30rem;
 	width: 100%;
 }
+footer{
+	padding-left: 1rem;
+
+}
+footer p{
+	font-size: 0.25rem;
+}
