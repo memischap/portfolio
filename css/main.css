@@ -33,40 +33,28 @@ h2{
 
 .block{
 	margin: 1rem;
-	height: 15rem;
+	/* height: 15rem; */
+	flex: 1 1 25rem;
 	transition: 0.5s;
-
-}
-.connect{
-	height: 15rem;
-	width: 100%;
-	background-image: url("../img/park-03.svg");
+	width: 15rem;
+	height: 15rem;;
 	background-repeat: no-repeat;
 	background-clip:border-box;
-	transition: 0.25s;
+}
+.connect{
+
+	background-image: url("../img/park.svg");
+
+
 }
 
 @media (min-width:30rem) {
-	.block{
+	/* .block{
 	width: 15rem;
 	height: 15rem;
-}
-.connect{
-	width: 32rem;
-	height: 15rem;
-}
+} */
 
-.top-row{
-	display: flex;
-	justify-content: center;
 
-}
-
-.bottom-row{
-display: flex;
-justify-content: center;
-
-}
 }
 
 
@@ -76,7 +64,10 @@ justify-content: center;
 }
 #home-nav{
 	padding: 1rem;
-	margin:auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+
 }
 
 nav a{
@@ -135,7 +126,7 @@ iframe{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	padding-top: 0.5em;
-	flex: 1 1 15rem;
+	flex: 1 1 25rem;
 }
 
 
@@ -153,18 +144,11 @@ iframe{
 }
 
 .projects{
-	background-image:url("../img/gallery-02.svg");
+	background-image:url("../img/shop.svg");
 
 }
 
-@media (max-width:30rem) {
-	.projects{
-		background-image:url("../img/large-gallery-04.svg");
-		background-repeat: repeat-x;
 
-
-	}
-}
 
 #home-nav a{
 	color: black;

@@ -53,7 +53,8 @@
 }
 
 .page-content{
-	padding-left: 1em;
+	padding: 1em;
+
 }
 
 
@@ -122,8 +123,14 @@ padding-right: 1em;
 	padding-left: 3em;
 }
 
-
-
+#bio p{
+	position: relative;
+	left: 10rem;
+}
+#bio{
+	display: flex;
+	justify-content: center;
+}
 
 
 
