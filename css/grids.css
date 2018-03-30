@@ -48,7 +48,7 @@
 	margin-bottom: 5rem;
 }
 
-.heading {
+header {
 	padding-left: 1em;
 }
 
@@ -83,20 +83,15 @@ padding-right: 1em;
 .contact-img{
 	opacity: 0;
 }
-@media(max-width: 51em){
-[class^='project-header']{
-	display:inline-block;
-	width: 100%;
-	height: auto;
-}
-
-}
-.work-copy{
-	padding: 0;
-}
-
 
 @media (min-width: 30em){
+	#bio p{
+		position: relative;
+		left: 8%;
+	}
+}
+
+@media (min-width: 40em){
 .box{
 	background-clip:content-box;
 	width: 12rem;
@@ -116,16 +111,16 @@ padding-right: 1em;
 	margin-bottom: 5rem;
 }
 
-.heading{
+header{
 	padding-left: 3em;
 }
 .page-content{
-	padding-left: 3em;
+	padding: 3em;
 }
 
 #bio p{
 	position: relative;
-	left: 10rem;
+	left: 20%;
 }
 #bio{
 	display: flex;
@@ -182,19 +177,6 @@ width: 45%;
 
 }
 
-.project-header-top{
-display: inline-block;
-width: 100%;
-height: auto;
-
-
-}
-
-.project-header-bottom{
-	display: inline-block;
-	width: 100%;
-	height: auto;
-}
 
 /* .pic-box{
 	padding-top: 4.55%;
@@ -223,9 +205,7 @@ height: auto;
 	flex: 1 1 20em;
 
 }
-.project-header{
-	max-width: 50rem;
-}
+
 
 .video{
 	/* margin-top:3rem; */
