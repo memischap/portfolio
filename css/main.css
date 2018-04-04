@@ -36,8 +36,8 @@ h4{
 }
 
 section h2{
-	font-weight: 400;
-	font-size: 2.4rem;
+	font-weight: 500;
+
 }
 
 .block{
@@ -279,4 +279,59 @@ header nav{
 	max-width: 25rem;
 
 	}
+}
+
+figcaption{
+	font-weight: 300;
+	font-style: italic;
+}
+
+.elements{
+	box-shadow:0 0 2.5rem rgba(100,100,100,0.25);
+	padding: 1rem;
+	margin-top:1rem;
+	border-radius: 0.5rem;
+
+}
+/* stylesheet */
+.top-level{
+	text-decoration: underline;
+
+}
+
+.inner-section{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.style-flex{
+	flex:1 1 18rem;
+	padding: 1.5rem;
+}
+
+.atomic{
+	padding-bottom: 8rem;
+}
+
+.nav-button{
+	background: grey;
+	margin-bottom: 0.25rem;
+}
+
+footer{
+	bottom: 0;
+  background-image: url("../img/seawall-13.svg");;
+	/* padding: 2rem; */
+	padding-bottom: 6rem;
+}
+
+footer .link{
+	color: white;
+	padding-right: 1rem;
+font-size: 0.6rem;
+
+
+
+
+
 }

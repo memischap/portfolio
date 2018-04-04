@@ -1,24 +1,40 @@
 #streetcar{
+  height:10vw;
+  width: auto;
   position: relative;
   animation-name: streetcar-an;
-  animation-duration: 15s;
+  animation-duration: 40s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
-    animation-direction: alternate;
-  width: 80%
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+
 }
 
 
 @keyframes streetcar-an {
 
-  from{
-    right:-400px;
+   0%{
+    left:-60%;
   }
-  to{
-    right:1200px;
+  30%{
+    left:100%;
+  }
+  50%{
+    left:30%;
+  }
+
+  60%{
+    left:30%;
+  }
+  80%{
+    left:0%;
+  }
+
+  100%{
+    left:-60%;
   }
 }
-@media(max-width:30rem){
+/* @media(max-width:30rem){
   #streetcar{
     position: relative;
     animation-name: streetcar-an;
@@ -37,4 +53,4 @@
     right:100%;
   }
 }
-}
+} */

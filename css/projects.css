@@ -19,9 +19,32 @@
   flex: 1 1 35rem;
   padding-left: 1rem;
   padding-right: 1rem;
-
+padding-bottom: 2rem;
 }
 
+.analysis p{
+  padding-left: 1.5rem;
+}
+
+.analysis-w-art p{
+  padding-left: 1.5rem;
+}
+section .analysis-w-art{
+  flex: 1 1 55rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.the-text{
+  max-width: 35rem;
+  flex: 1 1 20rem;
+}
+/* .is-left{
+  margin-left: auto;
+} */
 
 
 .flexing-box{
@@ -37,10 +60,38 @@
 
 .process-photo{
   margin: auto;
-  max-width: 30rem;
 
+padding: 1rem;
+  max-width: 30rem;
+  flex: 1 1 15rem;
 
 }
+
+.process-photo img{
+  width: 100%;
+  height: auto;
+
+}
+
+.screenshot{
+    box-shadow: 1rem 0.5rem 3rem rgba(100,100,100,0.3);
+    transition: 0.5s;
+}
+
+ .screenshot:hover,  .screenshot:focus{
+  box-shadow: 1.24rem 0.5rem 3rem rgba(39, 158, 154,0.4);
+}
+
+@media (min-width:42rem) {
+  .lower{
+    padding-top: 10vw;
+  }
+  /* .swapping:nth-of-type(1){order: 2;} */
+  .swapping:nth-child(1){order: 2;}
+  .swapping:nth-child(2){order: 1;}
+}
+
+
 
 
 
