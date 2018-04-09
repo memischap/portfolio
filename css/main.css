@@ -1,5 +1,6 @@
 body{
-font-family: 'Poppins', sans-serif;
+font-family: 'poppins',-apple-system,BlinkMacSystemFont,helvetica,verdana, sans-serif;
+
 }
 h1{
 	color: rgb(0,235,82);
@@ -36,7 +37,7 @@ h4{
 }
 
 section h2{
-	font-weight: 500;
+	font-weight: 700;
 
 }
 
@@ -84,10 +85,12 @@ nav a{
 padding: 0.5rem 1rem 0.5rem 1rem;
 		color:black;
 	transition: 0.5s;
+
 }
 
 nav a:hover,nav a:focus{
 	color: white;
+
 }
 
 
@@ -115,8 +118,11 @@ a{
 	color: #00ebc7
 } */
 
+
+
 p{
-	line-height: 2rem;
+	line-height: 1.6rem;
+	font-weight: 300;
 }
 iframe{
 	border:none;
@@ -132,10 +138,15 @@ iframe{
 
 .project{
 	padding-bottom: 1em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 	padding-top: 0.5em;
-	flex: 1 1 13rem;
+	margin:1rem;
+	flex: 1 1 16rem;
+	border-radius: 0.8rem;
+
+	box-shadow: 0rem 0rem 1rem rgba(100,100,100,0.3);
+	transition: 0.4s;
 }
 
 
@@ -167,12 +178,17 @@ iframe{
 	height:100%;
 }
 
+#bio{
+justify-content: center;
+display: flex;
+}
+
 #bio p{
 	max-width: 30rem;
 }
 
 .project:hover,.project:focus{
-opacity: 0.6;
+	box-shadow: 1rem 0rem 3rem rgba(100,100,100,0.3);
 
 }
 
@@ -205,9 +221,10 @@ background:#db4833;
 height: 2.5rem;
 }
 
-.project-button:hover{
+.project-button:hover .project-button:focus{
 	background: url("../img/shop.svg");
 	padding-bottom:5.9rem;
+		background-size: cover;
 
 }
 
@@ -216,11 +233,11 @@ background:#fec381;
 height: 2.5rem;
 }
 
-.bio-button:hover{
+.bio-button:hover .bio-button:focus{
 	background:url("../img/smallerappt-12.svg");
 
 	padding-bottom:6rem;
-	padding-right: 2rem;
+	/* padding-right: 2rem; */
 	max-width: 10rem;
 	background-size: cover;
 
@@ -231,10 +248,15 @@ background:#4da04d;
 height: 2.5rem;
 }
 
-.contact-button:hover{
+.contact-button:hover .contact-button:focus{
 	background: url("../img/small-park-09.svg");
 	padding-bottom: 6rem;
-	padding-right: 3rem;
+		background-size: cover;
+	/* padding-right: 3rem; */
+}
+
+.contact-button{
+	margin-bottom: 2rem;
 }
 
 
@@ -249,7 +271,9 @@ a h1{
 	transition: 0.5s;
 }
 a h1:hover,a h1:focus{
-	margin-bottom: 1rem;
+
+letter-spacing: 0.1rem;
+
 }
 
  #contact{
@@ -258,10 +282,11 @@ margin: auto;
 max-width: 30rem;
 }
 
-@media(min-width:35rem){
+@media(min-width:50rem){
 #bio h2{
 	margin-left: -4rem;
 }
+
 }
 
 header nav{
@@ -269,6 +294,8 @@ header nav{
 	flex-wrap: wrap;
 	padding-right: 1rem;
 	justify-content: center;
+	width: 100%;
+
 }
 
 @media(min-width:22rem){
@@ -277,6 +304,7 @@ header nav{
 		flex-wrap: wrap;
 	justify-content:space-between;
 	max-width: 25rem;
+			position: absolute;
 
 	}
 }
@@ -284,6 +312,8 @@ header nav{
 figcaption{
 	font-weight: 300;
 	font-style: italic;
+	font-size: 0.8rem;
+letter-spacing: 0.015rem;
 }
 
 .elements{
@@ -327,7 +357,7 @@ footer{
 
 footer .link{
 	color: white;
-	padding-right: 1rem;
+	padding-right: 2rem;
 font-size: 0.6rem;
 
 
